@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
+    <title>Portifólio</title>
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,900;1,300;1,700&display=swap"
       rel="stylesheet"
@@ -14,118 +18,142 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Header e Conteúdo</title>
+
+    <!-- REMIX ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">Lucas</div>
-      <nav class="nav">
-        <a class="nav-a" href="#">Sobre mim</a>
-        <a class="nav-a" href="#">Habilidades</a>
-        <a class="nav-a" href="#">Projetos</a>
+    <header class="container">
+      <a class="logo" href="#">Lucas</a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="nav__icons">
+        <i class="ri-menu-line" id="menu-icon"></i>
+        <i class="ri-close-line" id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="#">About</a>
+        <a href="#">Sobre mim</a>
+        <a href="#">Habilidades</a>
+        <a href="#">Projetos</a>
       </nav>
     </header>
+
     <main class="content">
-      <div class="content-div">
-        <div class="div-icons">
-          <a
-            href="https://www.linkedin.com/in/lucas-neto-contaiffer-7a5408268/"
-            target="_blank"
-            ><img
-              class="icons"
-              src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
-              alt="Linkedin"
-          /></a>
-          <a href=""
-            ><img
-              class="icons"
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              alt="GitHub"
-          /></a>
+      <section>
+        <div class="content-div">
+          <div class="div-icons">
+            <a
+              href="https://www.linkedin.com/in/lucas-neto-contaiffer-7a5408268/"
+              target="_blank"
+              ><img
+                class="icons"
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+                alt="Linkedin"
+            /></a>
+            <a href="https://github.com/lucascontaiffer" target="_blank"
+              ><img
+                class="icons"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="GitHub"
+            /></a>
+          </div>
+
+          <div class="div__dev">
+            <h1 class="first-h1">
+              Desenvolvedor <br />
+              front-end
+            </h1>
+            <p class="description">
+              Meu nome é Lucas, tenho 19 anos e sou apaixonado por tecnologia.
+            </p>
+            <button class="contact-btn">Contato</button>
+          </div>
         </div>
-        <div>
-          <h1 class="first-h1">
-            Desenvolvedor <br />
-            front-end
-          </h1>
-          <p class="description">
-            Meu nome é Lucas, tenho 19 anos e sou apaixonado por tecnologia.
+      </section>
+
+      <section class="first-section">
+        <div class="div_first-section">
+          <h1 class="first-section-h1">Sobre mim</h1>
+          <p>
+            Desde o início de 2023, venho estudando HTML, CSS e JavaScript.
+            Descobrir como estruturar e estilizar páginas da web.meu objetivo é
+            me tornar um desenvolvedor web completo. Estou ansioso para explorar
+            mais e criar projetos inovadores no futuro.
           </p>
-          <button class="contact-btn">Contato</button>
         </div>
-      </div>
+        <div class="div_first-section">
+          <h1 class="first-section-h1">Habilidadades</h1>
+          <div>
+            <img
+              class="logos"
+              src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+              alt="HTML"
+            />
+            <img
+              class="logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+              alt="CSS"
+            />
+            <img
+              class="logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+              alt="JS"
+            />
+            <img
+              class="logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
+              alt="React"
+            />
+            <img
+              class="logos"
+              src="https://plugins.jetbrains.com/files/15321/428853/icon/pluginIcon.png"
+              alt="Tailwind"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/eletrocars.PNG" alt="" class="card__img">
+              <h3>Eletrocars</h3>
+              <button class="card__button"><a href="https://responsive-car-website-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Ver</a></button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/pokedex.PNG" alt="" class="card__img">
+              <h3>Pokedex</h3>
+              <button class="card__button"><a href="" target="_blank" rel="noopener noreferrer">Ver</a></button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/streamberry.PNG" alt="" class="card__img">
+              <h3>StreamBerry</h3>
+              <button class="card__button"><a href="" target="_blank" rel="noopener noreferrer">Ver</a></button>
+            </div>
+            <!-- To add a more card slider <div class="swiper-slide">
+              
+            </div> -->
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
-    <section class="first-section">
-      <div class="div_first-section">
-        <h1 class="first-section-h1">About me</h1>
-        <p>
-          Desde o início de 2023, venho estudando HTML, CSS e JavaScript.
-          Descobrir como estruturar e estilizar páginas da web.meu objetivo é me
-          tornar um desenvolvedor web completo. Estou ansioso para explorar mais
-          e criar projetos inovadores no futuro.
-        </p>
-      </div>
-      <div class="div_second-section">
-        <h1 class="first-section-h1">Habilidadades</h1>
-        <div>
-          <img
-            class="logos"
-            src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
-            alt="HTML"
-          />
-          <img
-            class="logos"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
-            alt="CSS"
-          />
-          <img
-            class="logos"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
-            alt="JS"
-          />
-          <img
-            class="logos"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
-            alt="React"
-          />
-          <img
-            class="logos"
-            src="https://plugins.jetbrains.com/files/15321/428853/icon/pluginIcon.png"
-            alt="Tailwind"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="second-section">
-      <div class="second-section-h1"><h1>Projetos</h1></div>
-      <div class="cards-grid">
-        <div class="card-projetos">
-          <img src="sdsdsd" alt="pokedex" />
-          <div class="card-description">
-            <h2>Landing page -ou- página de vendas -ou- </h2>
-            <button><a href="#">visualizar</a></button>
-          </div>
-        </div>
-        <div class="card-projetos">
-          <img
-            class="projects-img"
-            src="assets/img/pokedex.PNG"
-            alt="pokedex"
-          />
-          <div class="card-description">
-            <h2>Pokedex</h2>
-            <button><a href="#">visualizar</a></button>
-          </div>
-        </div>
-        <div class="card-projetos">
-          <img class="projects-img" src="assets/img/streamberry.PNG" alt="streamberry" />
-          <div class="card-description">
-            <h2>StreamBerry</h2>
-            <button><a href="#">visualizar</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="assets/script/script.js"></script>
+    
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/script/script.js"></script>
   </body>
 </html>
